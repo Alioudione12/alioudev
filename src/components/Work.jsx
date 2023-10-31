@@ -1,20 +1,28 @@
 import WorkItem from "./WorkItem"
 
 const data = [
+        {
+        year: 2023,
+        company: "PIXACARE",
+        title: "CDD Développeur Cross platform",
+        duration: "6 mois",
+        details: "Développement des algorithmes d’intelligence artificielle qui mesurent et analysent les plaies avec la caméra du smartphone | Participer à l’analyse des données explorés | Participer au développement des  interfaces avec tailwind CSS.",
+        
+    },
     {
         year: 2023,
-        company: "Picard",
-        title: "Frontend Developpeur",
-        duration: "6 mois",
-        details: "Intervention sur l’ inscription des utilisateurs | Conception d’ interface  e-commerce | Data collection et intégration et fusionner l'écosystème par des API | Participation à l’écosystème React/Python | Expériences des méthodologies de développement Agile, Scrum.",
+        company: "SNCF Connect",
+        title: "Alternance Développeur full stack",
+        duration: "1 an",
+        details: "Développement des algorithmes qui permettent aux utilisateurs de trouver une destination, un trajet ou numéro de train  et déterminer un tarif | Rédaction des fonctionnalités et techniques | Intervention sur la page de souscription des utilisateurs | processus de développement Agile/Scrum .",
         
     },
     {
         year: 2022,
-        company: "Air Senegal",
-        title: "Full stack Developpeur",
-        duration: "1 année",
-        details: "Participer à l’analyse des données et à la rédaction des spécifications fonctionnelles et techniques. | Concevoir, développer de nouveaux produits | Intervenir dans le projet méthodologie Agile,Scrum | Participer au développement des applications (back et front) et aux tests | Intervention sur l’ inscription des utilisateurs | développer un algorithme de géolocalisation pour déterminer des tarifs ",
+        company: "Picard",
+        title: "Stage Développeur front-end",
+        duration: "3 mois",
+        details: " Conception d’ interface  e-commerce | Data collection,  intégration et fusionner l'écosystème par REST API | expériences de méthodologies de développement Agile, Scrum.",
     },
     {
         year: 2021,
@@ -28,7 +36,7 @@ const data = [
 const Work = () => {
   return (
     <div id="work" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
-    <h1 className="text-4xl font-bold text-center text-[#001b5e]">Work</h1>
+    <h1 className="text-2xl font-bold text-center text-[#485460]">Expériences professionnelle</h1>
     {data.map((item, idx) => (
         <WorkItem key={idx} year={item.year} title={item.title} company={item.company} duration={item.duration} details={item.details}/>
     ))}
